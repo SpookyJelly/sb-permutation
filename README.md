@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/74237436/438239599-6e3ebdd1-aa89-4c0b-813f-a5a60c29a0f0.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250428%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250428T141249Z&X-Amz-Expires=300&X-Amz-Signature=bb4c8f76be0142ec443663d4ba67a71458d91e84599d2ec9edc7f70531f9dfe3&X-Amz-SignedHeaders=host" alt="logo" width="150px"/>
+  <img src="https://github.com/user-attachments/assets/b0416382-ef6a-4832-9a35-e4e7c9a694c4" alt="logo" width="150px"/>
   <h1>sb-permutation</h1>
   <span><img src="https://cdn.jsdelivr.net/gh/storybookjs/brand@main/badge/badge-storybook.svg"/></span>
   <span><img src="https://img.shields.io/github/package-json/v/SpookyJelly/sb-permutation?color=brightgreen"/></span>

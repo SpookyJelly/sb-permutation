@@ -37,7 +37,7 @@
     "clean": "rimraf ./dist",
     "build": "tsup",
     "start": "npm run build && npm run storybook",
-    "release": "npn run build && npm publish",
+    "release": "npm run build && npm publish",
     "storybook": "storybook dev -p 6006",
     "vite": "vite build --watch --config vite.watch.config.ts",
     "storybook:build": "storybook build -o ./docs && touch ./docs/.nojekyll"
