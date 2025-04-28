@@ -1,44 +1,26 @@
 <div align="center">
-  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/107913240/239455269-15b3e7a3-26a1-4262-8f62-a0728d73a23c.png" alt="logo" width="150px"/>
-  <h1>sb-addon-permutation-table</h1>
+  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/74237436/438239599-6e3ebdd1-aa89-4c0b-813f-a5a60c29a0f0.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250428%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250428T141249Z&X-Amz-Expires=300&X-Amz-Signature=bb4c8f76be0142ec443663d4ba67a71458d91e84599d2ec9edc7f70531f9dfe3&X-Amz-SignedHeaders=host" alt="logo" width="150px"/>
+  <h1>sb-permutation</h1>
   <span><img src="https://cdn.jsdelivr.net/gh/storybookjs/brand@main/badge/badge-storybook.svg"/></span>
-  <span><img src="https://img.shields.io/github/package-json/v/daimresearch/sb-addon-permutation-table?color=brightgreen"/></span>
+  <span><img src="https://img.shields.io/github/package-json/v/SpookyJelly/sb-permutation?color=brightgreen"/></span>
   <span><img src="https://badgen.net/badge/Built%20With/TypeScript/blue"/></span>
   <div>
-  <strong><a href="./README.ko.md" target="_blank">Korean</a></strong> |
-  <strong><a href="https://daimresearch.github.io/sb-addon-permutation-table/?path=/docs/introduction--docs" target="_blank">Demos</a></strong>
+  <strong><a href="https://daimresearch.github.io/sb-permutation/?path=/docs/introduction--docs" target="_blank">Demos</a></strong>
   </div>
 </div>
 <hr/>
 
-- **Disclaimer: This is only guaranteed to work with React-based projects. Other frameworks may introduce unintended errors.**
-- **Typescript only Project. We don't have a plan to support Javascript**
-- **NOW WE SUPPORT STORYBOOK 8**
+### Before you Read
+
+- This addon is forked version of [sb-permutation](https://daimresearch.github.io/sb-permutation). This project adds bug fixes, version compatibility, and utility features that were not addressed in the original project. But, The basic project direction is the same.
+
+- This is only guaranteed to work with React-based projects. Other frameworks may introduce unintended errors.
 
 ![demo](./static/demo.gif)
 
 This project is an addon that provides additional functionality to Storybook. In a separate panel, you can see the various aspects of the component as a table.
 
 This project was highly inspired by Datadog's design system, [DRUIDS](https://druids.datadoghq.com/), and we wanted to use the Component Permutation feature from DRUIDS in Storybook.
-
----
-
-🆘 **Help us make `sb-addon-permutation-table` even more awesome!** 🆘
-
-After the v1.0.0 release, we tried making `sb-addon-permutation-table` work with Vue and Svelte too, but we hit a tiny roadblock. Our Addon is head over heels for a React hook, and it just can't get enough! As of now, it is still deeply in love with React and hasn't quite opened its heart to other frameworks.
-
-If we can get rid of React hooks in Panel and Preview, this marvalous addon will be shine regardless of what framework you are working on.
-
-Can you lend a helping hand? 🥺
-
-```
--The Mighty Quest-
-
-1. Take a peek at our GitHub - the code is all there, waiting for your brilliance.
-2. Got any bright ideas? Quirky solutions? Magical spells 🧙‍♂️? Share them with us, and we'll be forever grateful!
-3. Spread the word! Let your fellow developers know about "sb-addon-permutation-table"'s quest for multi-framework love.
-4. Together, we can make "sb-addon-permutation-table" truly awesome for all frameworks out there! 🌟
-```
 
 ---
 
@@ -63,7 +45,9 @@ Can you lend a helping hand? 🥺
 
 ### Installation
 
-`yarn add sb-addon-permutation-table`
+`yarn add sb-permutation`
+
+`npm install sb-permutation`
 
 #### Requirements
 
@@ -72,17 +56,21 @@ Can you lend a helping hand? 🥺
 
 ### For users using below React 19
 
-- try version 1.0.3
-  `yarn add sb-addon-permutation-table@1.0.3`
+~~- try version 1.0.3
+`yarn add sb-permutation@1.0.3`~~
 
-this version supports SB8 && React 18
+~~this version supports SB8 && React 18~~
 
-SB 8.5 has decided to support React 19, and using the latest version of the addon will cause conflicts.
+~~SB 8.5 has decided to support React 19, and using the latest version of the addon will cause conflicts.~~
+
+NOW IN PROGRESS
 
 #### For users under SB 7.x
 
-- try version 1.0.21
-  `yarn add sb-addon-permutation-table@1.0.21`
+~~- try version 1.0.21
+`yarn add sb-permutation@1.0.21`~~
+
+NOW IN PROGRESS
 
 ### Why should I use it?
 
@@ -96,7 +84,7 @@ Add addon code in `.stories/main.ts` like below.
 import type { StorybookConfig } from "@storybook/react-vite";
 const config: StorybookConfig = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
-  addons: ["sb-addon-permutation-table"],
+  addons: ["sb-permutation"],
   framework: {
     name: "@storybook/react-vite",
     options: {},
@@ -134,7 +122,7 @@ The addon will automatically use your component's type and make it available in 
 // stories/Component.stories.(ts|tsx)
 
 import React from "react";
-import { PermutationMeta } from "sb-addon-permutation-table";
+import { PermutationMeta } from "sb-permutation";
 import YourComponent from "YourComponent";
 
 const meta: PermutationMeta<typeof YourComponent> = {
@@ -244,7 +232,7 @@ This is optional. If the name field is not specified, the permutation-table will
 
 ### Demos
 
-[Demo Page](https://daimresearch.github.io/sb-addon-permutation-table/?path=/docs/introduction--docs)
+[Demo Page](https://daimresearch.github.io/sb-permutation/?path=/docs/introduction--docs)
 
 ### FAQ
 
@@ -288,7 +276,7 @@ export const decorators = [
 
 ---
 
-If you got another problem, make a [issue](https://github.com/daimresearch/sb-addon-permutation-table/issues/new/choose) to let us know
+If you got another problem, make a [issue](https://github.com/daimresearch/sb-permutation/issues/new/choose) to let us know
 
 ### License
 
