@@ -282,6 +282,3 @@ If you got another problem, make a [issue](https://github.com/daimresearch/sb-pe
 
 MIT
 
-## Sponsors
-
-<a href="http://www.daimresearch.com/" target="_blank"><img src="https://www.daimresearch.com/theme/business/extend/sections/header/daim9952_header/img/logo.png"></a>
